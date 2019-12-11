@@ -20,7 +20,7 @@ export default new Router({
     {
       path:"/", // 根路径，路由到 Layout组件
       component: () => import('../pages/Layout'),
-      redirect:"/index/login",
+      redirect:"/index/dashboard",
       children:[ // 其它所有组件都是 Layout的子组件
         route("/index/dashboard","/Dashboard","Dashboard"),
         //第一个参数:路径 第二个参数:组件位置 第三个参数:
